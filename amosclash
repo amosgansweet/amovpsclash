@@ -15,9 +15,16 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: amosvl-1-qaep9hxu, server: amos.yahaibio.us.kg, port: 32153, client-fingerprint: chrome, type: vless, uuid: ad534ff4-16f8-454d-8afb-ca7e258ac703, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: amos.yahaibio.us.kg}}}
-  - {name: amos-vm-1-lcvuo75z, server: amos.yahaibio.us.kg, port: 32155, client-fingerprint: chrome, type: vmess, uuid: 8bfbec33-a558-4742-8cc6-a64636cb4086, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /download, headers: {Host: amos.yahaibio.us.kg}}}
-  - {name: amostroj-reality-domain-ssl-obc4nwrx, server: amos.yahaibio.us.kg, port: 32158, client-fingerprint: firefox, type: trojan, password: d2H0Yg6MtI, sni: yahoo.com, skip-cert-verify: false}
+  - {name: amosvl-1-qaep9hxu, server: 137.184.178.57, port: 32153, client-fingerprint: chrome, type: vless, uuid: ad534ff4-16f8-454d-8afb-ca7e258ac703, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: amos-vm-1-lcvuo75z, server: 137.184.178.57, port: 32155, client-fingerprint: chrome, type: vmess, uuid: 8bfbec33-a558-4742-8cc6-a64636cb4086, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /download}}
+  - {name: amosvl-2-domain-ssl-pmf4jukd, server: 137.184.178.57, port: 32156, client-fingerprint: chrome, type: vless, uuid: 11dfaf8d-bcfa-4f44-a264-2f6a491feb7d, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: amostroj-domain-ssl-lot12v7m, server: 137.184.178.57, port: 32157, client-fingerprint: chrome, type: trojan, password: 8YrsfIN40m, sni: amos.yahaibio.us.kg, skip-cert-verify: false}
+  - {name: amostroj-reality-domain-ssl-obc4nwrx, server: 137.184.178.57, port: 32158, client-fingerprint: firefox, type: trojan, password: d2H0Yg6MtI, sni: yahoo.com, skip-cert-verify: false}
+  - {name: amostroj-reality-newdest-y9ef1vfb, server: 137.184.178.57, port: 32159, client-fingerprint: firefox, type: trojan, password: KWaSqUTt5E, sni: www.craven-college.ac.uk, skip-cert-verify: false}
+  - {name: amosvl-reality-2-qvelcymv, server: 137.184.178.57, port: 32160, reality-opts: {public-key: 9EqFE9BNbch3pXXmj9bLRDX0e_x5jMZ-1ezL_Wcw-nA, short-id: 59f0274a}, client-fingerprint: chrome, type: vless, uuid: 4b043128-acf3-4d9f-a6e3-825f48b2b47f, tls: true, tfo: false, skip-cert-verify: false, servername: www.syfe.com, network: tcp}
+  - {name: amostroj-tls-7e461oul, server: 137.184.178.57, port: 32161, client-fingerprint: chrome, type: trojan, password: woAlUCg3Xp, sni: amos.yahaibio.us.kg, skip-cert-verify: false}
+  - {name: amosvl-3-reality-zfxbbuk9, server: 137.184.178.57, port: 32162, reality-opts: {public-key: QedWC8aPbW1kQiCP50WkUdFPeqFmlKkJEyFI_6rb6R8, short-id: 9b8a10bd}, client-fingerprint: chrome, type: vless, uuid: c79434c6-03e3-475f-bee3-46bae2af6ec4, tls: true, tfo: false, skip-cert-verify: false, servername: www.hudsonstarobserver.com, network: tcp}
+  - {name: amosvl-4-tls-jrn1h2vt, server: 137.184.178.57, port: 32163, client-fingerprint: chrome, type: vless, uuid: 7ee67e0b-f4a0-4008-a405-65edc5108192, tls: true, tfo: false, skip-cert-verify: false, servername: amos.yahaibio.us.kg, network: ws, ws-opts: {path: /download, headers: {Host: amos.yahaibio.us.kg}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -35,7 +42,14 @@ proxy-groups:
     proxies:
       - amosvl-1-qaep9hxu
       - amos-vm-1-lcvuo75z
+      - amosvl-2-domain-ssl-pmf4jukd
+      - amostroj-domain-ssl-lot12v7m
       - amostroj-reality-domain-ssl-obc4nwrx
+      - amostroj-reality-newdest-y9ef1vfb
+      - amosvl-reality-2-qvelcymv
+      - amostroj-tls-7e461oul
+      - amosvl-3-reality-zfxbbuk9
+      - amosvl-4-tls-jrn1h2vt
   - name: 📲 电报消息
     type: select
     proxies:
